@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wowok - AI Web Orchestrator Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0b0f19; color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif; }
+        .glow { box-shadow: 0 0 20px rgba(6, 182, 212, 0.35); }
+        .glow-green { box-shadow: 0 0 10px rgba(34, 197, 94, 0.6); }
+        .chat-box { height: 260px; overflow-y: auto; scrollbar-width: thin; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- 1. HERO SECTION -->
+    <header class="container mx-auto px-6 py-12 text-center flex flex-col items-center">
+        <div class="inline-flex items-center gap-2 bg-emerald-950/80 border border-emerald-500/50 text-emerald-400 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 glow-green">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            Status: Active & Ready 24/7
+        </div>
+        <div class="w-20 h-20 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center text-3xl text-white mb-4 glow">
+            <i class="fa-solid fa-network-wired"></i>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-3">
+            WOWOK
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-2xl font-light">
+            AI-Driven Full-Stack Web Development Orchestrator yang menerjemahkan ide menjadi aplikasi web fungsional secara otomatis.
+        </p>
+    </header>
+
+    <!-- 2. PROBLEM & SOLUTION CARD -->
+    <section class="container mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-cyan-400">Tantangan & Solusi</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-slate-900/80 border border-red-500/30 p-6 rounded-xl">
+                <h3 class="text-red-400 font-bold text-lg mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation"></i> The Chaos (Masalah)
+                </h3>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Inefisiensi pembuatan website: proses dari nol memakan waktu lama & rawan miskomunikasi.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Kurangnya konsistensi arsitektur frontend, backend, dan database tanpa sinkronisasi skema.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-500 mt-1"></i> Kompleksitas maintenance: kesulitan melakukan bug-fixing atau pembaruan berkala.</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/80 border border-cyan-500/30 p-6 rounded-xl glow">
+                <h3 class="text-cyan-400 font-bold text-lg mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check"></i> The Solution (Wowok)
+                </h3>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-cyan-400 mt-1"></i> Tim Multi-Agen otomatis di bawah komando Master Orchestrator (Wowok).</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-cyan-400 mt-1"></i> Sinkronisasi Shared Memory & Schema Registry untuk konsistensi kode end-to-end.</li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-check text-cyan-400 mt-1"></i> Pengujian mandiri oleh QC & kesiapsiagaan Agen Maintenance untuk update berkelanjutan.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLUEPRINT DETAIL: 5 PERTANYAAN UTAMA -->
+    <section class="container mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-cyan-400">Blueprint Detail Karyawan Digital</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 01 -->
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl">
+                <span class="text-xs text-cyan-400 font-bold tracking-widest uppercase">01. Nama Sistem</span>
+                <h4 class="font-bold text-base mt-1 mb-2">Wowok (AI-Driven Full-Stack Web Development Orchestrator)</h4>
+                <p class="text-slate-400 text-xs">Sistem orkestrator berbasis agen AI cerdas yang menerjemahkan prompt menjadi aplikasi web fungsional end-to-end.</p>
+            </div>
+            <!-- 02 -->
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl">
+                <span class="text-xs text-cyan-400 font-bold tracking-widest uppercase">02. Masalah Utama</span>
+                <h4 class="font-bold text-base mt-1 mb-2">Inefisiensi & Inkonsistensi Dev</h4>
+                <p class="text-slate-400 text-xs">Mengatasi lambatnya proses pembuatan web manual, tingginya bug integrasi, dan kompleksitas maintenance berkala.</p>
+            </div>
+            <!-- 03 -->
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl">
+                <span class="text-xs text-cyan-400 font-bold tracking-widest uppercase">03. Mode Kerja Agen</span>
+                <h4 class="font-bold text-base mt-1 mb-2">Tim Multi-Agen (Multi-Agent Team)</h4>
+                <p class="text-slate-400 text-xs">Berjalan dalam tim kolaboratif yang dikelola terpusat oleh Master Orchestrator (Wowok).</p>
+            </div>
+            <!-- 04 -->
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl md:col-span-2">
+                <span class="text-xs text-cyan-400 font-bold tracking-widest uppercase">04. Struktur Tim & Pola Kerja</span>
+                <h4 class="font-bold text-base mt-1 mb-2">5 Agen Spesialis & Siklus Sekuensial</h4>
+                <p class="text-slate-400 text-xs">Terdiri dari DB Architect, Backend Builder, Frontend Dev, QC Tester, dan Ops/Maintenance. Bekerja melalui siklus Inisiasi → Fondasi → Konstruksi → Verifikasi → Pemeliharaan.</p>
+            </div>
+            <!-- 05 -->
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-xl">
+                <span class="text-xs text-cyan-400 font-bold tracking-widest uppercase">05. Arsitektur Memori</span>
+                <h4 class="font-bold text-base mt-1 mb-2">Shared Memory System</h4>
+                <p class="text-slate-400 text-xs">Menyimpan Global Project Context, Technical Artifacts & Schema Registry, Error Log, serta User Preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CORE CAPABILITIES -->
+    <section class="container mx-auto px-6 py-8">
+        <h2 class="text-2xl font-bold text-center mb-8 text-cyan-400">Core Capabilities</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl text-center">
+                <i class="fa-solid fa-database text-3xl text-cyan-400 mb-3"></i>
+                <h4 class="font-bold mb-2">1. DB & API Architect</h4>
+                <p class="text-slate-400 text-xs">Mendesain skema database terintegrasi dan membangun RESTful API cepat dan aman.</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl text-center">
+                <i class="fa-solid fa-laptop-code text-3xl text-cyan-400 mb-3"></i>
+                <h4 class="font-bold mb-2">2. Frontend & UX Builder</h4>
+                <p class="text-slate-400 text-xs">Menyusun antarmuka modern yang terhubung otomatis dengan endpoint backend.</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-xl text-center">
+                <i class="fa-solid fa-bug-slash text-3xl text-cyan-400 mb-3"></i>
+                <h4 class="font-bold mb-2">3. Auto QC & Maintenance</h4>
+                <p class="text-slate-400 text-xs">Pengujian fungsionalitas menyeluruh serta perbaikan otomatis secara independen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. INTERACTIVE SIMULATION -->
+    <section class="container mx-auto px-6 py-8">
+        <div class="max-w-2xl mx-auto bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-xl">
+            <h3 class="text-sm font-bold text-slate-400 mb-3 uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-terminal text-cyan-400"></i> Simulasi Orkestrasi Agen
+            </h3>
+            <div id="chatBox" class="chat-box space-y-3 p-3 bg-slate-950 rounded-lg text-sm mb-4">
+                <div class="text-slate-500 italic text-center py-8">Pilih skenario di bawah untuk memulai simulasi...</div>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+                <button onclick="runSim(1)" class="bg-slate-800 hover:bg-cyan-900/50 border border-slate-700 text-xs py-2 px-2 rounded font-medium text-slate-300">1. Build Toko Online</button>
+                <button onclick="runSim(2)" class="bg-slate-800 hover:bg-cyan-900/50 border border-slate-700 text-xs py-2 px-2 rounded font-medium text-slate-300">2. Cek Bug Sync API</button>
+                <button onclick="runSim(3)" class="bg-slate-800 hover:bg-cyan-900/50 border border-slate-700 text-xs py-2 px-2 rounded font-medium text-slate-300">3. Refactor Kode DB</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER & CTA -->
+    <footer class="mt-auto border-t border-slate-800 py-8 bg-slate-950 text-center">
+        <a href="https://wa.me/6282230001534" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold px-8 py-3 rounded-full hover:opacity-90 transition glow mb-6">
+            <i class="fa-brands fa-whatsapp text-lg"></i> Kolaborasi dengan Wowok
+        </a>
+        <p class="text-xs text-slate-500">Built with AI · AI Builder Bootcamp Showcase</p>
+    </footer>
+
+    <script>
+        const scenarios = {
+            1: [
+                { role: 'user', text: 'Wowok, buatkan landing page toko online lengkap dengan DB!' },
+                { role: 'agent', text: '🤖 Wowok: Menginstruksikan Agen DB untuk buat skema produk & order...' },
+                { role: 'agent', text: '⚙️ Backend & Frontend: API terpasang & UI Toko Online siap!' }
+            ],
+            2: [
+                { role: 'user', text: 'Tolong cek kenapa API formulir pendaftaran error.' },
+                { role: 'agent', text: '🔍 Agen QC: Mengidentifikasi mismatch payload pada endpoint /register...' },
+                { role: 'agent', text: '✅ Agen Maintenance: Bug terperbaiki dan re-deploy berhasil!' }
+            ],
+            3: [
+                { role: 'user', text: 'Lakukan optimasi query database agar respons lebih cepat.' },
+                { role: 'agent', text: '⚡ Agen DB: Menambahkan indeks pada tabel transaksi...' },
+                { role: 'agent', text: '🚀 Wowok: Performa query naik 40%. Semua sistem normal!' }
+            ]
+        };
+
+        function runSim(id) {
+            const box = document.getElementById('chatBox');
+            box.innerHTML = '';
+            const steps = scenarios[id];
+            
+            steps.forEach((msg, idx) => {
+                setTimeout(() => {
+                    if (idx === 1) {
+                        const typing = document.createElement('div');
+                        typing.id = 'typing';
+                        typing.className = 'text-cyan-400 text-xs italic animate-pulse';
+                        typing.innerText = 'Wowok sedang mengorkestrasi tim agen...';
+                        box.appendChild(typing);
+                    }
+                    if (idx > 0 && document.getElementById('typing')) {
+                        document.getElementById('typing').remove();
+                    }
+                    const div = document.createElement('div');
+                    div.className = msg.role === 'user' 
+                        ? 'bg-blue-900/40 text-blue-200 p-2.5 rounded-lg ml-8 text-right border border-blue-800/50' 
+                        : 'bg-slate-900 text-cyan-300 p-2.5 rounded-lg mr-8 border border-slate-800';
+                    div.innerText = msg.text;
+                    box.appendChild(div);
+                    box.scrollTop = box.scrollHeight;
+                }, idx * 1000);
+            });
+        }
+    </script>
+</body>
+</html>
